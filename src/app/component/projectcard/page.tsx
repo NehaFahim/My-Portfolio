@@ -16,10 +16,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     <div className="border rounded-lg overflow-hidden shadow-xl border-solid border-blue-300 bg-slate-50 hover:shadow-2xl hover:scale-[1.03] transition-transform duration-300 flex flex-col h-full">
       {/* Project Image */}
       <img
-  src={project.image}
-  alt={project.title}
-  className="w-full max-w-[400px] md:max-w-[450px] h-auto  object-cover mx-auto"
-/>
+        src={project.image}
+        alt={project.title}
+        className="w-full max-w-[400px] md:max-w-[450px] h-auto object-cover mx-auto"
+      />
 
       <div className="p-4 md:p-6 flex flex-col flex-grow">
         <h2 className="text-xl md:text-2xl font-bold text-gray-800">
@@ -46,8 +46,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 };
 
 export default ProjectCard;
-export const config = {
-  unstable_runtimeJS: false,
-};
 
-
+// ✅ Replace this:
+export const runtime = "edge";  // ✅ Next.js latest config syntax
