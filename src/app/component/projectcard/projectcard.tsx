@@ -19,6 +19,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <Image
         src={project.image}
         alt={project.title}
+        width={800}
+        height={800}
         className="w-full max-w-[400px] md:max-w-[450px] h-auto object-cover mx-auto"
       />
 
@@ -49,4 +51,4 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 export default ProjectCard;
 
 // ✅ Replace this:
-export const runtime = "edge";  // ✅ Next.js latest config syntax
+// export const runtime = "edge";  // ✅ Next.js latest config syntax

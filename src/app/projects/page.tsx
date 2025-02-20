@@ -1,4 +1,4 @@
-import ProjectCard from "../component/projectcard/page";
+import ProjectCard from "../component/projectcard/projectcard";
 import Head from "../components/navbar/nav";
 
 interface Project {
