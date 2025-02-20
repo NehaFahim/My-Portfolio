@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaBars, FaTimes } from "react-icons/fa";
-import { HomeIcon, UserIcon, DocumentTextIcon, FolderIcon, BriefcaseIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import { HomeIcon, UserIcon, DocumentTextIcon, FolderIcon, PhoneIcon } from "@heroicons/react/24/outline";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,7 +30,6 @@ const Navbar = () => {
           <a href="/about" className="flex items-center text-amber-300 hover:text-white"><UserIcon className="w-5 h-5 mr-2" /> About</a>
           <a href="/resume" className="flex items-center text-amber-300 hover:text-white"><DocumentTextIcon className="w-5 h-5 mr-2" /> Resume</a>
           <a href="/projects" className="flex items-center text-amber-300 hover:text-white"><FolderIcon className="w-5 h-5 mr-2" /> Projects</a>
-          {/* <a href="/services" className="flex items-center text-cyan-400 hover:text-white"><BriefcaseIcon className="w-5 h-5 mr-2" /> Services</a> */}
           <a href="/contact" className="flex items-center  text-amber-300 hover:text-white"><PhoneIcon className="w-5 h-5 mr-2" /> Contact</a>
         </nav>
 
